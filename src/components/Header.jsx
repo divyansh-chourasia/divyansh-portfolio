@@ -33,7 +33,7 @@ const NavContent = ({ setMenuOpen }) => (
       <a onClick={() => setMenuOpen(false)} href="#work">
         Work
       </a>
-      <a onClick={() => setMenuOpen(false)} href="#techstack">
+      <a onClick={() => setMenuOpen(false)} href="#timeline">
         TechStack
       </a>
       <a onClick={() => setMenuOpen(false)} href="#services">
