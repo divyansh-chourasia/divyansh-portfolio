@@ -1,0 +1,43 @@
+{
+  "_note": "Template only. The site does not read this file. Copy an item into content/projects.json, then refresh. show false hides the card. symbols sit at the right end of the project name. icon is link or live. Leave href off to use the github field for a link, or to show the live icon with no address. Omit symbols to show neither icon.",
+  "kicker": "Section label. Example: Projects",
+  "github": "https://github.com/your-username",
+  "githubLabel": "GitHub",
+  "detailsLabel": "Details",
+  "items": [
+    {
+      "title": "Project name",
+      "from": "Where you built it. Example: Role · Company. Leave out if it does not belong to a job.",
+      "show": true,
+      "source": "Manual",
+      "status": "Hackathon",
+      "statusStyle": "background:#FAEEDA;color:#633806;",
+      "icon": "ti-robot",
+      "iconBg": "#EEEDFE",
+      "iconColor": "#534AB7",
+      "desc": "Two or three sentences. What it does, and what is real versus stubbed.",
+      "tags": ["Tech 1", "Tech 2", "Tech 3"],
+      "a": "First stat",
+      "al": "Label under the first stat",
+      "b": "Second stat",
+      "bl": "Label under the second stat",
+      "symbols": [
+        { "icon": "link", "href": "https://project-or-repo-link.example" },
+        { "icon": "live", "href": "https://live-demo.example" }
+      ]
+    }
+  ],
+  "architecture": {
+    "icon": "ti-cpu",
+    "iconBg": "#E6F1FB",
+    "iconColor": "#185FA5",
+    "title": "Wide card title. Usually the main project name.",
+    "from": "Role · Company",
+    "summary": "Short description of the architecture.",
+    "tags": ["Layer 1", "Layer 2", "Layer 3"],
+    "steps": [
+      { "icon": "ti-files", "label": "Step name", "sub": "One line under the step" },
+      { "icon": "ti-route", "label": "Next step", "sub": "What happens here" }
+    ]
+  }
+}

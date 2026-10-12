@@ -1,0 +1,23 @@
+{
+  "kicker": "Education",
+  "lead": "B.Tech in Computer Science at Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal, from 2019 to 2023, with an 8.4 CGPA. Class X and Class XII were at Kendriya Vidyalaya.",
+  "items": [
+    {
+      "icon": "ti-school",
+      "iconColor": "#185FA5",
+      "title": "Rajiv Gandhi Proudyogiki Vishwavidyalaya — B.Tech, Computer Science",
+      "date": "Bhopal, India | 2019 — 2023",
+      "description": "8.4 CGPA."
+    },
+    {
+      "icon": "ti-school",
+      "iconColor": "#185FA5",
+      "title": "Kendriya Vidyalaya — Class XII"
+    },
+    {
+      "icon": "ti-school",
+      "iconColor": "#185FA5",
+      "title": "Kendriya Vidyalaya — Class X"
+    }
+  ]
+}

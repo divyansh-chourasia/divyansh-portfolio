@@ -1,0 +1,26 @@
+{
+  "label": "Connect",
+  "title": "Email, phone, and LinkedIn",
+  "close": "Close",
+  "links": [
+    {
+      "href": "mailto:chourasiadivyansh2099@gmail.com",
+      "icon": "ti-mail",
+      "label": "Email",
+      "detail": "chourasiadivyansh2099@gmail.com"
+    },
+    {
+      "href": "tel:+917898995336",
+      "icon": "ti-phone",
+      "label": "Contact",
+      "detail": "+91 78989 95336"
+    },
+    {
+      "href": "https://www.linkedin.com/in/divyansh-chourasia/",
+      "icon": "ti-brand-linkedin",
+      "label": "LinkedIn",
+      "detail": "linkedin.com/in/divyansh-chourasia",
+      "external": true
+    }
+  ]
+}

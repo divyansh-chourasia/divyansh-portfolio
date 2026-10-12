@@ -1,0 +1,29 @@
+{
+  "documentTitle": "Divyansh Chourasia",
+  "name": "Divyansh Chourasia",
+  "navName": "Divyansh",
+  "initials": "DC",
+  "sidebarRole": "Fintech · AI · Backend",
+  "nav": [
+    { "view": "about", "label": "About me" },
+    { "view": "experience", "label": "Experience" },
+    { "view": "projects", "label": "Projects" },
+    { "view": "skills", "label": "Skills" },
+    { "view": "resume", "label": "Resume" }
+  ],
+  "sidebar": [
+    { "action": "projects", "icon": "ti-layout-grid", "label": "Projects" },
+    { "action": "experience", "icon": "ti-briefcase", "label": "Work experience" },
+    { "action": "skills", "icon": "ti-stars", "label": "Skills" },
+    { "action": "education", "icon": "ti-school", "label": "Education" },
+    { "action": "resume", "icon": "ti-file-text", "label": "Resume" },
+    { "action": "connect", "icon": "ti-link", "label": "Connect", "note": "Email, phone, and LinkedIn" }
+  ],
+  "actions": {
+    "share": "Share",
+    "shareTip": "Copies a link to this profile",
+    "copied": "Copied",
+    "copyFailed": "Copy failed",
+    "themeTip": "Switch between light and dark"
+  }
+}

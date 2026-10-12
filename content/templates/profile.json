@@ -1,0 +1,30 @@
+{
+  "_note": "Template only. The site does not read this file. Edit content/profile.json. nav is the top bar on a wide screen. sidebar is the side list, and on a tablet it also shows About me. Icons are Tabler names, such as ti-briefcase.",
+  "documentTitle": "Full name, used as the browser tab title",
+  "name": "Full name",
+  "navName": "Short name in the top bar",
+  "initials": "AB",
+  "sidebarRole": "Short tagline. Example: Fintech · AI · Backend",
+  "nav": [
+    { "view": "about", "label": "About me" },
+    { "view": "experience", "label": "Experience" },
+    { "view": "projects", "label": "Projects" },
+    { "view": "skills", "label": "Skills" },
+    { "view": "resume", "label": "Resume" }
+  ],
+  "sidebar": [
+    { "action": "projects", "icon": "ti-layout-grid", "label": "Projects" },
+    { "action": "experience", "icon": "ti-briefcase", "label": "Work experience" },
+    { "action": "skills", "icon": "ti-stars", "label": "Skills" },
+    { "action": "education", "icon": "ti-school", "label": "Education" },
+    { "action": "resume", "icon": "ti-file-text", "label": "Resume" },
+    { "action": "connect", "icon": "ti-link", "label": "Connect", "note": "Email, phone, and LinkedIn" }
+  ],
+  "actions": {
+    "share": "Share",
+    "shareTip": "Copies a link to this profile",
+    "copied": "Copied",
+    "copyFailed": "Copy failed",
+    "themeTip": "Switch between light and dark"
+  }
+}

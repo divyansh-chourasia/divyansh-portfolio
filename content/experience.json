@@ -1,0 +1,53 @@
+{
+  "kicker": "Experience",
+  "title": "Journey",
+  "lead": "After a B.Tech in Computer Science at RGPV, Bhopal, I joined Razorpay in January 2024 as an Associate Technical Consultant in Bengaluru. The integrations moved to Curlec in Malaysia, then Singapore, where Razorpay runs the checkout, APIs, and webhooks, and Airwallex does the licensed payment processing. The title now is Technical Consultant. Along the way I built Adaptive-RAG in an internal hackathon, and an agentic traffic system selected from 9,100+ projects at Google Cloud’s Agentic AI Day.",
+  "roles": [
+    {
+      "icon": "ti-briefcase",
+      "iconColor": "#534AB7",
+      "date": "Bengaluru",
+      "title": "Technical Consultant · Razorpay Curlec and Razorpay Singapore",
+      "subheading": "I now work for merchants in both geographies, Malaysia and Singapore."
+    },
+    {
+      "icon": "ti-building-bank",
+      "iconColor": "#0F6E56",
+      "date": "Singapore",
+      "title": "Razorpay Singapore",
+      "linkedin": "https://www.linkedin.com/company/razorpay-singapore-official/",
+      "linkLabel": "LinkedIn",
+      "subheading": "Razorpay International Services Pte. Ltd. partners with Airwallex (Singapore) Pte. Ltd., a payment service provider licensed under Singapore’s Payment Services Act 2019, so Singapore merchants can accept payments.",
+      "points": [
+        "Razorpay supplies the technical layer: checkout, APIs, webhooks, and integration support.",
+        "Airwallex runs the regulated payment processing and holds the funds.",
+        "Razorpay Singapore is not licensed under the Act and does not provide the payment service itself."
+      ]
+    },
+    {
+      "icon": "ti-building-bank",
+      "iconColor": "#534AB7",
+      "date": "Malaysia",
+      "title": "Razorpay Curlec",
+      "linkedin": "https://www.linkedin.com/company/razorpaycurlec/",
+      "linkLabel": "LinkedIn",
+      "subheading": "Curlec is the Razorpay group company in Malaysia.",
+      "points": [
+        "Led technical integrations of its payment gateway, APIs, SDKs, and plugins for Malaysian merchants, from architecture review through production go-live.",
+        "About 15–20 API and SDK issues a week across gateway, webhook, and auth flows, and more than 30 escalations with engineering.",
+        "Integration notes shortened merchant onboarding by roughly 40%.",
+        "Read production code in PHP, Go, and JavaScript, and traced timeouts, retries, and idempotency in the logs."
+      ]
+    },
+    {
+      "icon": "ti-briefcase",
+      "iconColor": "#534AB7",
+      "date": "Jan 2024 · Bengaluru",
+      "title": "Associate Technical Consultant · Razorpay",
+      "subheading": "Joined Razorpay on payments and integrations.",
+      "points": [
+        "The work is merchant-facing: payment APIs and SDKs, from the first architecture review through a live checkout."
+      ]
+    }
+  ]
+}

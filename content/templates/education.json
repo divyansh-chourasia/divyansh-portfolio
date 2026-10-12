@@ -1,0 +1,14 @@
+{
+  "_note": "Template only. The site does not read this file. Copy an item into content/education.json, then refresh. date and description are optional.",
+  "kicker": "Section label. Example: Education",
+  "lead": "Opening paragraph for the education page.",
+  "items": [
+    {
+      "icon": "ti-school",
+      "iconColor": "#185FA5",
+      "title": "School or university — Degree",
+      "date": "City | Start year — End year",
+      "description": "Grade, CGPA, or one line of detail."
+    }
+  ]
+}

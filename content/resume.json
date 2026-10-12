@@ -1,0 +1,23 @@
+{
+  "kicker": "Resume",
+  "name": "Divyansh Chourasia",
+  "role": "Technical Consultant at Razorpay · Bengaluru",
+  "lead": "",
+  "downloadLabel": "Download",
+  "downloadText": "",
+  "shareLabel": "Share",
+  "shareText": "",
+  "shareTitle": "Share the résumé",
+  "frameTitle": "Resume file",
+  "driveUrl": "https://drive.google.com/file/d/1fEFmVNvFPOIr8Tu3nERkUfPX1LTk9ZiM/view",
+  "admin": {
+    "label": "Private · not linked from the site",
+    "title": "Admin",
+    "body": "Paste a Google Drive file link. Update replaces the preview, the download, and the public Drive link. On the real site this screen sits behind the admin login.",
+    "field": "Résumé Google Drive link",
+    "placeholder": "https://drive.google.com/file/d/…",
+    "update": "Update",
+    "invalid": "Paste a Google Drive file link.",
+    "saved": "Updated. Download, share, and the preview use this file."
+  }
+}

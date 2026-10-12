@@ -1,0 +1,27 @@
+{
+  "_note": "Template only. The site does not read this file. Edit content/connect.json. href is mailto:, tel:, or https://. Set external true for links that should open in a new tab.",
+  "label": "Dialog label. Example: Connect",
+  "title": "Line under the label. Example: Email, phone, and LinkedIn",
+  "close": "Close",
+  "links": [
+    {
+      "href": "mailto:name@email.com",
+      "icon": "ti-mail",
+      "label": "Email",
+      "detail": "name@email.com"
+    },
+    {
+      "href": "tel:+910000000000",
+      "icon": "ti-phone",
+      "label": "Contact",
+      "detail": "+91 00000 00000"
+    },
+    {
+      "href": "https://www.linkedin.com/in/your-name/",
+      "icon": "ti-brand-linkedin",
+      "label": "LinkedIn",
+      "detail": "linkedin.com/in/your-name",
+      "external": true
+    }
+  ]
+}

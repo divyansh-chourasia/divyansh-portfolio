@@ -1,0 +1,35 @@
+{
+  "_note": "Template only. The site does not read this file. Edit content/about.json, then refresh the page.",
+  "kicker": "Section label. Example: About me",
+  "name": "Full name",
+  "role": "Role · Company · City",
+  "lead": "One short summary paragraph. The About page currently shows sample.paragraphs instead of this lead.",
+  "sample": {
+    "index": "Optional index. Example: 01 / ABOUT",
+    "heading": "Page heading. Example: About me",
+    "paragraphs": [
+      "First paragraph. Who you are and what you do.",
+      "Second paragraph. A project or skill worth naming.",
+      "Third paragraph. How you work."
+    ],
+    "facts": [
+      { "label": "Location", "value": "City" },
+      { "label": "Role", "value": "Job title" },
+      { "label": "Current domain", "value": "Industry" }
+    ]
+  },
+  "cards": [
+    {
+      "view": "experience",
+      "icon": "ti-briefcase",
+      "title": "Card title. Example: Now",
+      "text": "One line. Clicking the card opens the view named above."
+    },
+    {
+      "view": "projects",
+      "icon": "ti-cpu",
+      "title": "Card title. Example: Also building",
+      "text": "One line about side projects."
+    }
+  ]
+}
