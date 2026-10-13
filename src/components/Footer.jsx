@@ -28,7 +28,7 @@ const Footer = () => {
             <AiFillLinkedin />
           </a>
           
-          <a href="https://github.com/Divyansh1000" target={"blank"}>
+          <a href="https://github.com/divyansh-chourasia" target={"blank"}>
             <AiFillGithub />
           </a>
         </article>
