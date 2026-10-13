@@ -1,12 +1,11 @@
 {
   "kicker": "Experience",
-  "title": "Journey",
   "lead": "After a B.Tech in Computer Science at RGPV, Bhopal, I joined Razorpay in January 2024 as an Associate Technical Consultant in Bengaluru. The integrations moved to Curlec in Malaysia, then Singapore, where Razorpay runs the checkout, APIs, and webhooks, and Airwallex does the licensed payment processing. The title now is Technical Consultant. Along the way I built Adaptive-RAG in an internal hackathon, and an agentic traffic system selected from 9,100+ projects at Google Cloud’s Agentic AI Day.",
   "roles": [
     {
       "icon": "ti-briefcase",
       "iconColor": "#534AB7",
-      "date": "Bengaluru",
+      "date": "Present",
       "title": "Technical Consultant · Razorpay Curlec and Razorpay Singapore",
       "subheading": "I now work for merchants in both geographies, Malaysia and Singapore."
     },
@@ -42,8 +41,10 @@
     {
       "icon": "ti-briefcase",
       "iconColor": "#534AB7",
-      "date": "Jan 2024 · Bengaluru",
+      "date": "Jan 2024",
       "title": "Associate Technical Consultant · Razorpay",
+      "linkedin": "https://www.linkedin.com/company/razorpay/",
+      "linkLabel": "LinkedIn",
       "subheading": "Joined Razorpay on payments and integrations.",
       "points": [
         "The work is merchant-facing: payment APIs and SDKs, from the first architecture review through a live checkout."

@@ -1,10 +1,5 @@
 {
-  "kicker": "About me",
-  "name": "Divyansh Chourasia",
-  "role": "Technical Consultant at Razorpay · Bengaluru",
-  "lead": "Technical Consultant with 2+ years at Razorpay, integrating payment APIs and SDKs for merchants across Malaysia and Singapore. I built a retrieval-augmented generation pipeline for an internal hackathon, with hands-on work on LLM gateways and prompt engineering. I own problems end to end: root cause analysis, cross-functional escalations, and documentation that reduces repeat support.",
   "sample": {
-    "index": "01 / ABOUT",
     "heading": "About me",
     "paragraphs": [
       "Technical Consultant with 2+ years at Razorpay, integrating payment APIs and SDKs for merchants across Malaysia and Singapore.",
@@ -12,9 +7,18 @@
       "I own problems end to end: root cause analysis, cross-functional escalations, and documentation that reduces repeat support."
     ],
     "facts": [
-      { "label": "Location", "value": "Bengaluru" },
-      { "label": "Role", "value": "Technical Consultant" },
-      { "label": "Current domain", "value": "Fintech" }
+      {
+        "label": "Location",
+        "value": "Bengaluru"
+      },
+      {
+        "label": "Role",
+        "value": "Technical Consultant"
+      },
+      {
+        "label": "Current domain",
+        "value": "Fintech"
+      }
     ]
   },
   "cards": [

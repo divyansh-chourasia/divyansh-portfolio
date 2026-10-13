@@ -1,8 +1,6 @@
 {
   "_note": "Template only. The site does not read this file. Edit content/resume.json. driveUrl is the Google Drive view link. A link saved in the admin screen overrides this until you change it there.",
   "kicker": "Section label. Example: Resume",
-  "name": "Full name",
-  "role": "Role · Company · City",
   "lead": "Optional line under the heading. Leave empty for none.",
   "downloadLabel": "Download",
   "downloadText": "",

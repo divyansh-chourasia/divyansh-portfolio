@@ -1,129 +1,155 @@
 {
   "kicker": "Projects",
   "github": "https://github.com/divyansh-chourasia",
-  "detailsLabel": "Details",
   "githubLabel": "GitHub",
   "items": [
     {
       "title": "Adaptive-RAG",
       "from": "Technical Consultant · Razorpay",
       "show": true,
-      "source": "Manual",
       "status": "Hackathon",
       "statusStyle": "background:#FAEEDA;color:#633806;",
       "icon": "ti-robot",
       "iconBg": "#EEEDFE",
       "iconColor": "#534AB7",
       "desc": "Country-aware product discovery for Malaysia and India. Retrieval, an admin upload, and routing between Claude Haiku and Sonnet. Some hackathon pieces were stubbed.",
-      "tags": ["FastAPI", "RAG", "LiteLLM", "Portkey"],
+      "tags": [
+        "FastAPI",
+        "RAG",
+        "LiteLLM",
+        "Portkey"
+      ],
       "a": "MY · IN",
       "al": "Markets",
       "b": "Haiku / Sonnet",
       "bl": "Model routing",
       "symbols": [
-        { "icon": "link" },
-        { "icon": "live" }
+        {
+          "icon": "live",
+          "href": "https://live-demo.example"
+        }
       ]
     },
     {
       "title": "Agentic traffic",
       "from": "Razorpay Singapore",
       "show": true,
-      "source": "Manual",
       "status": "Award",
       "statusStyle": "background:#E1F5EE;color:#085041;",
       "icon": "ti-map-pin",
       "iconBg": "#E1F5EE",
       "iconColor": "#0F6E56",
       "desc": "Best Breakthrough Concept at Google Cloud Agentic AI Day. Real-time multi-agent tracking, chosen from 9,100+ projects.",
-      "tags": ["ADK", "Firebase", "Maps"],
+      "tags": [
+        "ADK",
+        "Firebase",
+        "Maps"
+      ],
       "a": "9,100+",
       "al": "Submissions",
       "b": "Real-time",
       "bl": "Tracking",
       "symbols": [
-        { "icon": "link" },
-        { "icon": "live" }
+        {
+          "icon": "live",
+          "href": "https://live-demo.example"
+        }
       ]
     },
     {
       "title": "Text2SQL",
       "show": true,
-      "source": "Manual",
       "status": "Demo",
       "statusStyle": "background:#E6F1FB;color:#0C447C;",
       "icon": "ti-database",
       "iconBg": "#E6F1FB",
       "iconColor": "#185FA5",
       "desc": "Plain English into SQL. Streamlit, LangChain, and Llama 3 through Ollama, with a schema cache in Google Sheets.",
-      "tags": ["Streamlit", "LangChain", "Ollama"],
+      "tags": [
+        "Streamlit",
+        "LangChain",
+        "Ollama"
+      ],
       "a": "Local",
       "al": "Inference",
       "b": "Sheets",
       "bl": "Schema cache",
       "symbols": [
-        { "icon": "link" },
-        { "icon": "live" }
+        {
+          "icon": "live",
+          "href": "https://live-demo.example"
+        }
       ]
     },
     {
       "title": "Musify",
       "show": true,
-      "source": "Manual",
       "status": "Built",
       "statusStyle": "background:#EEEDFE;color:#3C3489;",
       "icon": "ti-music",
       "iconBg": "#EEEDFE",
       "iconColor": "#534AB7",
       "desc": "A streaming application. React, Node.js, MongoDB, JWT, and Zustand for playback state.",
-      "tags": ["React", "Node.js", "MongoDB"],
+      "tags": [
+        "React",
+        "Node.js",
+        "MongoDB"
+      ],
       "a": "JWT",
       "al": "Auth",
       "b": "Zustand",
       "bl": "Playback",
       "symbols": [
-        { "icon": "link" },
-        { "icon": "live" }
+        {
+          "icon": "live",
+          "href": "https://live-demo.example"
+        }
       ]
     },
     {
       "title": "fullstack-chat-app",
       "show": false,
-      "source": "GitHub",
       "status": "Repo",
       "statusStyle": "background:#F4F2EC;color:#5c564e;",
       "icon": "ti-brand-github",
       "iconBg": "#F4F2EC",
       "iconColor": "#5c564e",
       "desc": "Public repository. The description can be edited without losing the GitHub link.",
-      "tags": ["JavaScript"],
+      "tags": [
+        "JavaScript"
+      ],
       "a": "GitHub",
       "al": "Source",
       "b": "Off",
       "bl": "Until shown",
       "symbols": [
-        { "icon": "link" },
-        { "icon": "live" }
+        {
+          "icon": "live",
+          "href": "https://live-demo.example"
+        }
       ]
     },
     {
       "title": "chai-backend",
       "show": false,
-      "source": "GitHub",
       "status": "Repo",
       "statusStyle": "background:#F4F2EC;color:#5c564e;",
       "icon": "ti-brand-github",
       "iconBg": "#F4F2EC",
       "iconColor": "#5c564e",
       "desc": "Public backend practice. Hidden from the page until the switch is on.",
-      "tags": ["Node.js"],
+      "tags": [
+        "Node.js"
+      ],
       "a": "GitHub",
       "al": "Source",
       "b": "Off",
       "bl": "Until shown",
       "symbols": [
-        { "icon": "link" },
-        { "icon": "live" }
+        {
+          "icon": "live",
+          "href": "https://live-demo.example"
+        }
       ]
     }
   ],
@@ -133,13 +159,40 @@
     "iconColor": "#185FA5",
     "title": "Adaptive-RAG",
     "from": "Technical Consultant · Razorpay",
+    "symbols": [
+      {
+        "icon": "live",
+        "href": "https://live-demo.example"
+      }
+    ],
     "summary": "A retrieval pipeline for country-aware product discovery. Some hackathon pieces were stubbed, and the page says so.",
-    "tags": ["Retrieval", "FastAPI", "Rate limits", "LiteLLM"],
+    "tags": [
+      "Retrieval",
+      "FastAPI",
+      "Rate limits",
+      "LiteLLM"
+    ],
     "steps": [
-      { "icon": "ti-files", "label": "Knowledge base", "sub": "Admin upload" },
-      { "icon": "ti-route", "label": "Model routing", "sub": "Haiku and Sonnet" },
-      { "icon": "ti-key", "label": "Gateway", "sub": "LiteLLM · Portkey" },
-      { "icon": "ti-layout", "label": "Front end", "sub": "React" }
+      {
+        "icon": "ti-files",
+        "label": "Knowledge base",
+        "sub": "Admin upload"
+      },
+      {
+        "icon": "ti-route",
+        "label": "Model routing",
+        "sub": "Haiku and Sonnet"
+      },
+      {
+        "icon": "ti-key",
+        "label": "Gateway",
+        "sub": "LiteLLM · Portkey"
+      },
+      {
+        "icon": "ti-layout",
+        "label": "Front end",
+        "sub": "React"
+      }
     ]
   }
 }

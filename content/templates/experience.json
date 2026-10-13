@@ -1,7 +1,6 @@
 {
   "_note": "Template only. The site does not read this file. Copy a role into content/experience.json, then refresh. Newest role first. Leave out linkedin, link, or points when a role does not need them.",
   "kicker": "Section label. Example: Experience",
-  "title": "Page title. Not shown if the page only uses the kicker and lead.",
   "lead": "Opening paragraph for the whole experience page.",
   "roles": [
     {

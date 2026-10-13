@@ -1,15 +1,13 @@
 {
-  "_note": "Template only. The site does not read this file. Copy an item into content/projects.json, then refresh. show false hides the card. symbols sit at the right end of the project name. icon is link or live. Leave href off to use the github field for a link, or to show the live icon with no address. Omit symbols to show neither icon.",
+  "_note": "Template only. The site does not read this file. Copy an item into content/projects.json, then refresh. show false hides the card. symbols sit at the right of the project name on each card and on the wide architecture card. icon is live. href is the link shown under that icon. Replace the dummy address with the real one. Omit symbols to show no icon.",
   "kicker": "Section label. Example: Projects",
   "github": "https://github.com/your-username",
   "githubLabel": "GitHub",
-  "detailsLabel": "Details",
   "items": [
     {
       "title": "Project name",
       "from": "Where you built it. Example: Role · Company. Leave out if it does not belong to a job.",
       "show": true,
-      "source": "Manual",
       "status": "Hackathon",
       "statusStyle": "background:#FAEEDA;color:#633806;",
       "icon": "ti-robot",
@@ -22,7 +20,6 @@
       "b": "Second stat",
       "bl": "Label under the second stat",
       "symbols": [
-        { "icon": "link", "href": "https://project-or-repo-link.example" },
         { "icon": "live", "href": "https://live-demo.example" }
       ]
     }
@@ -33,8 +30,10 @@
     "iconColor": "#185FA5",
     "title": "Wide card title. Usually the main project name.",
     "from": "Role · Company",
+    "symbols": [
+      { "icon": "live", "href": "https://live-demo.example" }
+    ],
     "summary": "Short description of the architecture.",
-    "tags": ["Layer 1", "Layer 2", "Layer 3"],
     "steps": [
       { "icon": "ti-files", "label": "Step name", "sub": "One line under the step" },
       { "icon": "ti-route", "label": "Next step", "sub": "What happens here" }

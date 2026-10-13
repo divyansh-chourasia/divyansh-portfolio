@@ -1,5 +1,5 @@
 {
-  "_note": "Template only. The site does not read this file. Edit content/skills.json. Each id in groups.items must match a key inside skills. kind is Work or Project. view is experience or projects.",
+  "_note": "Template only. The site does not read this file. Edit content/skills.json. Each id in groups.items must match a key inside skills. kind is Work or Project.",
   "kicker": "Section label. Example: Skills",
   "title": "Page title",
   "role": "One line under the heading. Example: Pick a skill.",

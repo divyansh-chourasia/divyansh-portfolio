@@ -1,11 +1,6 @@
 {
   "_note": "Template only. The site does not read this file. Edit content/about.json, then refresh the page.",
-  "kicker": "Section label. Example: About me",
-  "name": "Full name",
-  "role": "Role · Company · City",
-  "lead": "One short summary paragraph. The About page currently shows sample.paragraphs instead of this lead.",
   "sample": {
-    "index": "Optional index. Example: 01 / ABOUT",
     "heading": "Page heading. Example: About me",
     "paragraphs": [
       "First paragraph. Who you are and what you do.",
