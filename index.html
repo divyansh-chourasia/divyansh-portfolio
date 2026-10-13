@@ -19,7 +19,7 @@
     --border-radius-lg: 16px;
     --border-radius-md: 10px;
     --frame: 20px;
-    --ease: 0.9s ease;
+    --ease: 0.45s ease-in-out;
   }
   html.dark {
     --color-background-primary: #1c1b19;
@@ -30,6 +30,23 @@
     --color-border-tertiary: #34312c;
     --color-border-secondary: #4a453e;
   }
+
+  /* Only while the theme button is pressed, so hover stays instant. */
+  html.theme-changing,
+  html.theme-changing *,
+  html.theme-changing *::before,
+  html.theme-changing *::after {
+    transition: background-color var(--ease), color var(--ease), border-color var(--ease), box-shadow var(--ease), fill var(--ease), stroke var(--ease) !important;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html.theme-changing,
+    html.theme-changing *,
+    html.theme-changing *::before,
+    html.theme-changing *::after {
+      transition: none !important;
+    }
+  }
+
   * {
     box-sizing: border-box;
     margin: 0;
@@ -484,10 +501,22 @@
     color: var(--color-text-primary);
   }
 
+  /* The greeting sits in the open space above the paragraphs. */
+  #about .sample-hello {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--color-text-primary);
+  }
+
   #about .sample-copy {
     grid-column: 2;
     grid-row: 2;
-    margin-top: 28px;
+    margin-top: 16px;
   }
 
   #about .sample-copy p {
@@ -889,17 +918,8 @@
 
   .pcard-live {
     display: inline-flex;
-    flex-direction: column;
     align-items: center;
-    gap: 2px;
     line-height: 1;
-  }
-
-  .pcard-live span {
-    font-size: 11px;
-    font-weight: 400;
-    text-decoration: underline;
-    text-underline-offset: 2px;
   }
 
   html.dark .pcard-marks {
@@ -1196,10 +1216,14 @@
       display: block;
       grid-row: auto;
     }
+    #about .sample-hello {
+      grid-column: 1;
+      grid-row: auto;
+    }
     #about .sample-copy {
       grid-column: 1;
       grid-row: auto;
-      margin-top: 0;
+      margin-top: 16px;
     }
 
     #about .intro-grid {
@@ -1432,6 +1456,6 @@
   <!-- Phone only. Sits outside .shell so it stays fixed to the screen. -->
   <button class="to-top" id="toTop" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg></button>
 
-<script src="site.js?v=spaced"></script>
+<script src="site.js?v=theme"></script>
 </body>
 </html>

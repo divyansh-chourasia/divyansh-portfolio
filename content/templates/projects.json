@@ -1,5 +1,5 @@
 {
-  "_note": "Template only. The site does not read this file. Copy an item into content/projects.json, then refresh. show false hides the card. symbols sit at the right of the project name on each card and on the wide architecture card. icon is live. href is the link shown under that icon. Replace the dummy address with the real one. Omit symbols to show no icon.",
+  "_note": "Template only. The site does not read this file. Copy an item into content/projects.json, then refresh. show false hides the card. symbols sit at the right of the project name on each card and on the wide architecture card. icon is live. href makes that icon a link. Replace the dummy address with the real one. Omit symbols to show no icon.",
   "kicker": "Section label. Example: Projects",
   "github": "https://github.com/your-username",
   "githubLabel": "GitHub",

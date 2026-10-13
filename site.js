@@ -231,9 +231,17 @@ $("#shareResume").onclick = () => {
 /* ------------------------------------------------------------------ */
 
 /* Dark mode is the class "dark" on <html>.
-   The CSS variables in index.html do the color change. */
+   theme-changing lets the whole page fade, then it is removed. */
+let themeTimer = 0;
+
 $("#themeBtn").onclick = () => {
-  const dark = document.documentElement.classList.toggle("dark");
+  const root = document.documentElement;
+
+  root.classList.add("theme-changing");
+  window.clearTimeout(themeTimer);
+  themeTimer = window.setTimeout(() => root.classList.remove("theme-changing"), 480);
+
+  const dark = root.classList.toggle("dark");
   const icon = dark ? "ti-sun" : "ti-moon";
 
   $("#themeBtn").innerHTML = `<i class="ti ${icon}"></i>`;
@@ -364,8 +372,8 @@ function renderProfile() {
   $("#themeBtn").dataset.tip = actions.themeTip;
 }
 
-/* Heading, facts beside the paragraphs, then the two cards
-   that open Experience and Projects. */
+/* Heading, the greeting above the paragraphs, facts on the left,
+   then the two cards that open Experience and Projects. */
 function renderAbout() {
   const about = content.about;
   const sample = about.sample;
@@ -389,6 +397,10 @@ function renderAbout() {
       ${card.text ? `<span>${esc(card.text)}</span>` : ""}
     </button>`).join("");
 
+  const intro = sample.intro
+    ? `<p class="sample-hello">${esc(sample.intro)}</p>`
+    : "";
+
   $("#aboutMain").innerHTML = `
     <div class="page-title">
       <div class="intro-kicker">${esc(sample.heading)}</div>
@@ -398,6 +410,7 @@ function renderAbout() {
         <p class="sample-tag">${esc(content.profile.sidebarRole)}</p>
         <div class="sample-facts">${facts}</div>
       </div>
+      ${intro}
       <div class="sample-copy">${paragraphs}</div>
     </div>
     <div class="intro-grid">${cards}</div>`;
@@ -409,7 +422,7 @@ function renderAbout() {
 /* ------------------------------------------------------------------ */
 
 /* The live icon at the right of a project title.
-   href is the link under the icon. No href means the icon is not a link. */
+   href makes the icon a link. No href means the icon is not a link. */
 function titleSymbols(project) {
   const symbols = Array.isArray(project.symbols) ? project.symbols : [];
   if (!symbols.length) return "";
@@ -420,11 +433,7 @@ function titleSymbols(project) {
     const icon = `<i class="ti ti-live-photo" aria-hidden="true"></i>`;
     if (!symbol.href) return icon;
 
-    return `
-      <a class="pcard-live" href="${esc(symbol.href)}" target="_blank" rel="noreferrer">
-        ${icon}
-        <span>Live</span>
-      </a>`;
+    return `<a class="pcard-live" href="${esc(symbol.href)}" target="_blank" rel="noreferrer">${icon}</a>`;
   }).join("");
 
   return icons ? `<span class="pcard-marks">${icons}</span>` : "";

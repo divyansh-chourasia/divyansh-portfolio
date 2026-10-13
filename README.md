@@ -6,6 +6,8 @@ This repository is the portfolio site: one HTML page, one script, and the text i
 
 ## About
 
+Hi, I am Divyansh Chourasia.
+
 Technical Consultant with 2+ years at Razorpay, integrating payment APIs and SDKs for merchants across Malaysia and Singapore.
 
 Built a retrieval-augmented generation pipeline for an internal hackathon, with hands-on work on LLM gateways and prompt engineering.
