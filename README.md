@@ -64,7 +64,6 @@ B.Tech in Computer Science at Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal, 
 ## Connect
 
 - Email: [chourasiadivyansh2099@gmail.com](mailto:chourasiadivyansh2099@gmail.com)
-- Phone: +91 78989 95336
 - LinkedIn: [divyansh-chourasia](https://www.linkedin.com/in/divyansh-chourasia/)
 - GitHub: [divyansh-chourasia](https://github.com/divyansh-chourasia)
 
