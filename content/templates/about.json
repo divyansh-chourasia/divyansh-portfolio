@@ -2,7 +2,11 @@
   "_note": "Template only. The site does not read this file. Edit content/about.json, then refresh the page.",
   "sample": {
     "heading": "Page heading. Example: About me",
-    "intro": "Introduction above the paragraphs. Example: Hi, I am Your Name",
+    "intro": {
+      "hello": "Short greeting. Example: Hello, I'm",
+      "name": "Your name",
+      "sub": "One line under the name. Example: Payments, integrations, and applied AI"
+    },
     "paragraphs": [
       "First paragraph. Who you are and what you do.",
       "Second paragraph. A project or skill worth naming.",

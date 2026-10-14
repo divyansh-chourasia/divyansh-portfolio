@@ -372,8 +372,8 @@ function renderProfile() {
   $("#themeBtn").dataset.tip = actions.themeTip;
 }
 
-/* Heading, the greeting above the paragraphs, facts on the left,
-   then the two cards that open Experience and Projects. */
+/* About me and Hello, I'm start at the same height.
+   The name and italic line stay under the greeting. */
 function renderAbout() {
   const about = content.about;
   const sample = about.sample;
@@ -397,20 +397,18 @@ function renderAbout() {
       ${card.text ? `<span>${esc(card.text)}</span>` : ""}
     </button>`).join("");
 
-  const intro = sample.intro
-    ? `<p class="sample-hello">${esc(sample.intro)}</p>`
-    : "";
-
   $("#aboutMain").innerHTML = `
-    <div class="page-title">
-      <div class="intro-kicker">${esc(sample.heading)}</div>
-    </div>
     <div class="sample-split">
       <div class="sample-side">
+        <div class="intro-kicker">${esc(sample.heading)}</div>
         <p class="sample-tag">${esc(content.profile.sidebarRole)}</p>
-        <div class="sample-facts">${facts}</div>
       </div>
-      ${intro}
+      <div class="sample-hello">
+        <span class="hello-line">${esc(sample.intro.hello)}</span>
+        <span class="hello-name">${esc(sample.intro.name)}</span>
+        <span class="hello-sub">${esc(sample.intro.sub)}</span>
+      </div>
+      <div class="sample-facts">${facts}</div>
       <div class="sample-copy">${paragraphs}</div>
     </div>
     <div class="intro-grid">${cards}</div>`;

@@ -450,14 +450,7 @@
     gap: 24px;
   }
 
-  #about .page-title {
-    margin-bottom: 16px;
-  }
-
-  #about .page-title .intro-kicker {
-    margin-bottom: 0;
-  }
-
+  /* About me and Hello, I'm start on the same line. */
   #about .sample-split {
     display: grid;
     grid-template-columns: 240px minmax(0, 1fr);
@@ -465,21 +458,23 @@
     align-items: start;
   }
   #about .sample-side {
-    position: sticky;
-    top: 72px;
-    display: grid;
-    grid-template-rows: subgrid;
-    grid-row: span 2;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #about .intro-kicker {
+    margin: 0;
   }
   #about .sample-tag {
-    margin: 0;
+    margin: 12px 0 0;
     font-size: 13px;
     line-height: 1.5;
     color: var(--color-text-secondary);
   }
   #about .sample-facts {
+    grid-column: 1;
+    grid-row: 2;
     margin-top: 28px;
-    padding: 10px 12px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -501,22 +496,38 @@
     color: var(--color-text-primary);
   }
 
-  /* The greeting sits in the open space above the paragraphs. */
   #about .sample-hello {
     grid-column: 2;
     grid-row: 1;
-    align-self: end;
     margin: 0;
-    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  #about .hello-line {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-text-secondary);
+  }
+  #about .hello-name {
+    font-size: 32px;
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 1.15;
     color: var(--color-text-primary);
+  }
+  #about .hello-sub {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--color-text-secondary);
   }
 
   #about .sample-copy {
     grid-column: 2;
     grid-row: 2;
-    margin-top: 16px;
+    margin-top: 28px;
   }
 
   #about .sample-copy p {
@@ -551,12 +562,11 @@
     margin-top: 8px;
   }
 
-  /* Résumé. The heading is on the left. Download and Share sit on the right of that same row. */
+  /* Résumé. The heading is its own row. Download is on the left below it, Share on the right. */
   #resume .main {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr);
     align-items: center;
-    column-gap: 16px;
   }
 
   #resume #resumeHead {
@@ -569,13 +579,12 @@
   }
 
   #resume .intro-grid {
-    grid-column: 2;
-    grid-row: 1;
-    margin-top: 0;
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 12px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    gap: 8px;
   }
 
   #resume .resume-frame {
@@ -1209,21 +1218,36 @@
 
     #about .sample-split {
       grid-template-columns: 1fr;
-      gap: 28px;
     }
     #about .sample-side {
-      position: static;
-      display: block;
-      grid-row: auto;
+      display: contents;
+    }
+    #about .intro-kicker {
+      order: 0;
+    }
+    #about .sample-tag {
+      order: 1;
+      margin-top: 16px;
     }
     #about .sample-hello {
       grid-column: 1;
       grid-row: auto;
+      order: 2;
+      margin-top: 16px;
     }
     #about .sample-copy {
       grid-column: 1;
       grid-row: auto;
+      order: 3;
       margin-top: 16px;
+    }
+    #about .sample-facts {
+      grid-column: 1;
+      grid-row: auto;
+      order: 4;
+      margin-top: 28px;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     #about .intro-grid {
@@ -1396,16 +1420,16 @@
           <div class="main">
             <div id="resumeHead"></div>
             <div class="intro-grid">
-              <button class="intro-card" id="shareResume" type="button">
-                <div class="intro-ico"><i class="ti ti-share"></i></div>
-                <b id="shareResumeLabel"></b>
-                <span id="shareResumeText"></span>
-              </button>
               <a class="intro-card" id="downloadResume" target="_blank" rel="noreferrer">
                 <div class="intro-ico"><i class="ti ti-download"></i></div>
                 <b id="downloadResumeLabel"></b>
                 <span id="downloadResumeText"></span>
               </a>
+              <button class="intro-card" id="shareResume" type="button">
+                <div class="intro-ico"><i class="ti ti-share"></i></div>
+                <b id="shareResumeLabel"></b>
+                <span id="shareResumeText"></span>
+              </button>
             </div>
             <div class="resume-frame">
               <iframe id="resumeFrame" title="Resume file"></iframe>
@@ -1456,6 +1480,6 @@
   <!-- Phone only. Sits outside .shell so it stays fixed to the screen. -->
   <button class="to-top" id="toTop" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg></button>
 
-<script src="site.js?v=theme"></script>
+<script src="site.js?v=factline"></script>
 </body>
 </html>
