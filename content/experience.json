@@ -1,6 +1,6 @@
 {
   "kicker": "Experience",
-  "lead": "After a B.Tech in Computer Science at RGPV, Bhopal, I joined Razorpay in January 2024 as an Associate Technical Consultant in Bengaluru. The integrations moved to Curlec in Malaysia, then Singapore, where Razorpay runs the checkout, APIs, and webhooks, and Airwallex does the licensed payment processing. The title now is Technical Consultant. Along the way I built Adaptive-RAG in an internal hackathon, and an agentic traffic system selected from 9,100+ projects at Google Cloud’s Agentic AI Day.",
+  "lead": "Backend and AI engineer at Razorpay since January 2024, after a B.Tech in Computer Science at RGPV, Bhopal. I take merchants' payment integrations from architecture review to production go-live. That started in Bengaluru, then Curlec in Malaysia, and now Singapore as well. Razorpay runs the checkout, APIs, and webhooks. Airwallex runs the licensed payment processing. I also built an Adaptive-RAG pipeline for an internal hackathon, and a multi-agent traffic system selected from 9,100+ projects at Google Cloud's Agentic AI Day. The title now is Technical Consultant.",
   "roles": [
     {
       "icon": "ti-briefcase",
@@ -16,7 +16,7 @@
       "title": "Razorpay Singapore",
       "linkedin": "https://www.linkedin.com/company/razorpay-singapore-official/",
       "linkLabel": "LinkedIn",
-      "subheading": "Razorpay International Services Pte. Ltd. partners with Airwallex (Singapore) Pte. Ltd., a payment service provider licensed under Singapore’s Payment Services Act 2019, so Singapore merchants can accept payments.",
+      "subheading": "Razorpay International Services Pte. Ltd. partners with Airwallex (Singapore) Pte. Ltd., a payment service provider licensed under Singapore's Payment Services Act 2019, so Singapore merchants can accept payments.",
       "points": [
         "Razorpay supplies the technical layer: checkout, APIs, webhooks, and integration support.",
         "Airwallex runs the regulated payment processing and holds the funds.",
@@ -32,10 +32,11 @@
       "linkLabel": "LinkedIn",
       "subheading": "Curlec is the Razorpay group company in Malaysia.",
       "points": [
-        "Led technical integrations of its payment gateway, APIs, SDKs, and plugins for Malaysian merchants, from architecture review through production go-live.",
-        "About 15–20 API and SDK issues a week across gateway, webhook, and auth flows, and more than 30 escalations with engineering.",
-        "Integration notes shortened merchant onboarding by roughly 40%.",
-        "Read production code in PHP, Go, and JavaScript, and traced timeouts, retries, and idempotency in the logs."
+        "Led 15 to 20 API and SDK integrations a week from architecture review through production go-live, across gateway, webhook, and auth flows, and more than 30 escalations with engineering.",
+        "Cut merchant onboarding time by roughly 40% by writing integration docs with working code examples.",
+        "Read production code in PHP, Go, and JavaScript to find regression points. I fixed the smaller issues directly and handed the rest to engineering with a clear repro.",
+        "Analyzed production logs for timeouts, retries, and idempotency across distributed payment flows, so a repeated attempt was not treated as a new payment.",
+        "Translated merchant requirements into API-level recommendations their engineering teams could act on."
       ]
     },
     {
@@ -47,7 +48,7 @@
       "linkLabel": "LinkedIn",
       "subheading": "Joined Razorpay on payments and integrations.",
       "points": [
-        "The work is merchant-facing: payment APIs and SDKs, from the first architecture review through a live checkout."
+        "Merchant-facing work from day one: payment APIs and SDKs, from the first architecture review through a live checkout."
       ]
     }
   ]
