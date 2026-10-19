@@ -5,19 +5,19 @@
     {
       "icon": "ti-school",
       "iconColor": "#185FA5",
-      "title": "Rajiv Gandhi Proudyogiki Vishwavidyalaya — B.Tech, Computer Science",
-      "date": "Bhopal, India | 2019 — 2023",
+      "title": "Rajiv Gandhi Proudyogiki Vishwavidyalaya, B.Tech, Computer Science",
+      "date": "Bhopal, India | 2019 to 2023",
       "description": "8.4 CGPA."
     },
     {
       "icon": "ti-school",
       "iconColor": "#185FA5",
-      "title": "Kendriya Vidyalaya — Class XII"
+      "title": "Kendriya Vidyalaya, Class XII"
     },
     {
       "icon": "ti-school",
       "iconColor": "#185FA5",
-      "title": "Kendriya Vidyalaya — Class X"
+      "title": "Kendriya Vidyalaya, Class X"
     }
   ]
 }
