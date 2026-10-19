@@ -2,14 +2,14 @@
   "sample": {
     "heading": "About me",
     "intro": {
-      "hello": "Hello, I'm",
+      "hello": "Hi, I am",
       "name": "Divyansh Chourasia",
       "sub": "Think like a developer. Debug like an engineer. Innovate with AI."
     },
     "paragraphs": [
-      "Technical Consultant with 2+ years at Razorpay, integrating payment APIs and SDKs for merchants across Malaysia and Singapore.",
-      "I built a retrieval-augmented generation pipeline for an internal hackathon, with hands-on work on LLM gateways and prompt engineering.",
-      "I own problems end to end: root cause analysis, cross-functional escalations, and documentation that reduces repeat support."
+      "Backend and AI engineer at Razorpay. For 2+ years I have shipped payment integrations, including APIs, SDKs, and webhooks, for merchants across Malaysia and Singapore. I read production code in PHP, Go, and JavaScript, and I use the logs to find where a payment failed.",
+      "On the AI side I have built a RAG pipeline with model routing between Claude Haiku and Sonnet behind LiteLLM and Portkey, a Text2SQL engine running Llama 3 locally, and a multi-agent traffic tracker that won Best Breakthrough Concept at Google Cloud's Agentic AI Day.",
+      "I take a problem from the root cause through the fix or a clean handoff, then write notes the next person can use. Those integration notes shortened merchant onboarding by roughly 40%."
     ],
     "facts": [
       {
@@ -31,13 +31,13 @@
       "view": "experience",
       "icon": "ti-briefcase",
       "title": "Currently",
-      "text": "Working at Razorpay on payment integrations and merchant-facing technical challenges across Southeast Asia."
+      "text": "Razorpay, payment integrations for merchants in Malaysia and Singapore."
     },
     {
       "view": "projects",
       "icon": "ti-cpu",
       "title": "Also building",
-      "text": "Text-to-SQL · Adaptive RAG · Agentic traffic intelligence"
+      "text": "RAG pipelines, Text2SQL, and agentic systems on Google ADK."
     }
   ]
 }
