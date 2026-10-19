@@ -372,11 +372,12 @@ function renderProfile() {
   $("#themeBtn").dataset.tip = actions.themeTip;
 }
 
-/* About me and Hello, I'm start at the same height.
-   The name and italic line stay under the greeting. */
+/* About me and the greeting start at the same height.
+   intro.hello, intro.name, and intro.sub match content/templates/about.json. */
 function renderAbout() {
   const about = content.about;
   const sample = about.sample;
+  const intro = sample.intro;
 
   const facts = sample.facts.map((fact) => `
     <div class="sample-fact">
@@ -404,9 +405,9 @@ function renderAbout() {
         <p class="sample-tag">${esc(content.profile.sidebarRole)}</p>
       </div>
       <div class="sample-hello">
-        <span class="hello-line">${esc(sample.intro.hello)}</span>
-        <span class="hello-name">${esc(sample.intro.name)}</span>
-        <span class="hello-sub">${esc(sample.intro.sub)}</span>
+        <span class="hello-line">${esc(intro.hello)}</span>
+        <span class="hello-name">${esc(intro.name)}</span>
+        <span class="hello-sub">${esc(intro.sub)}</span>
       </div>
       <div class="sample-facts">${facts}</div>
       <div class="sample-copy">${paragraphs}</div>
