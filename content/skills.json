@@ -1,5 +1,6 @@
 {
   "kicker": "Skills",
+  "title": "Skills",
   "role": "Pick a skill. The panel shows the Razorpay work or the project where it is real.",
   "empty": "Pick a skill.",
   "groups": [
@@ -7,6 +8,7 @@
       "name": "Languages",
       "items": [
         "js",
+        "ts",
         "python",
         "sql"
       ]
@@ -16,9 +18,11 @@
       "items": [
         "node",
         "express",
+        "fastapi",
         "mongo",
         "mysql",
-        "queryopt"
+        "queryopt",
+        "eventdriven"
       ]
     },
     {
@@ -34,14 +38,18 @@
       ]
     },
     {
-      "name": "AI",
+      "name": "AI and LLM engineering",
       "items": [
+        "rag",
+        "llmgateway",
+        "modelrouting",
+        "mcp",
+        "prompts",
         "langchain",
         "llama",
         "ollama",
-        "streamlit",
         "adk",
-        "prompts"
+        "streamlit"
       ]
     },
     {
@@ -69,195 +77,315 @@
   "skills": {
     "js": {
       "name": "JavaScript",
-      "kind": "Project",
-      "place": "Musify, Chatty, and Razorpay production code",
-      "used": "I write the product UI in JavaScript, and I read it in Razorpay production when a checkout script or plugin misbehaves. Musify and Chatty are both JavaScript on the front end."
+      "kind": "Work",
+      "place": "Razorpay production code, Musify, and Chatty",
+      "view": "experience",
+      "open": "",
+      "used": "ES6+ in production and in projects. At Razorpay I read and debug JavaScript checkout scripts and plugins. In Musify and Chatty I write the React front ends on Node back ends."
+    },
+    "ts": {
+      "name": "TypeScript",
+      "kind": "Work",
+      "place": "Razorpay integration work",
+      "view": "experience",
+      "open": "",
+      "used": "I use TypeScript for API request and response shapes that a merchant's engineering team builds against, so a bad payload fails at compile time."
     },
     "python": {
       "name": "Python",
       "kind": "Project",
       "place": "Adaptive-RAG and Text2SQL",
-      "used": "Two Python builds. Adaptive-RAG’s gateway is FastAPI. Text2SQL is Streamlit and LangChain, turning a plain-English question into SQL."
+      "view": "projects",
+      "open": "",
+      "used": "Two Python builds. Adaptive-RAG's backend is FastAPI, with rate limiting, model routing, and the LLM gateway. Text2SQL is Streamlit and LangChain, turning a plain-English question into SQL."
     },
     "sql": {
       "name": "SQL",
       "kind": "Work",
       "place": "Razorpay production databases",
+      "view": "experience",
+      "open": "",
       "used": "I query production SQL to see where a payment stalled: the transaction, the delivery, or the settlement. Text2SQL is the side project that lets someone ask the same kind of question in English."
-    },
-    "react": {
-      "name": "React",
-      "kind": "Project",
-      "place": "Adaptive-RAG and Musify",
-      "used": "Adaptive-RAG’s front end follows Razorpay’s navigation. Musify is a streaming app in React. Playback state stays out of the component tree."
-    },
-    "tailwind": {
-      "name": "Tailwind CSS",
-      "kind": "Project",
-      "place": "React screens",
-      "used": "Tailwind is how those React screens are styled. Spacing, type, and state live next to the markup, which keeps a checkout-like layout or a player from growing a second stylesheet."
-    },
-    "zustand": {
-      "name": "Zustand",
-      "kind": "Project",
-      "place": "Musify",
-      "used": "Musify keeps playback in Zustand. The player can move, pause, and change track without asking the whole React tree to render again."
-    },
-    "html": {
-      "name": "HTML",
-      "kind": "Project",
-      "place": "Musify and Adaptive-RAG",
-      "used": "The document under the React apps. Headings, buttons, and forms stay semantic so the screen still makes sense before the script runs."
-    },
-    "css": {
-      "name": "CSS",
-      "kind": "Project",
-      "place": "Musify and Adaptive-RAG",
-      "used": "Layout and the small states a screen actually needs: focus, error, empty, and the player or checkout sitting still while data loads."
     },
     "node": {
       "name": "Node.js",
       "kind": "Project",
       "place": "Musify and Chatty",
-      "used": "Musify’s API and Chatty, the real-time chat app, both run on Node. React talks to that process. MongoDB holds Musify’s records."
+      "view": "projects",
+      "open": "",
+      "used": "Musify's API and Chatty, the real-time chat app, both run on Node. React talks to that process. MongoDB holds Musify's records."
     },
     "express": {
       "name": "Express",
       "kind": "Project",
       "place": "Musify and Chatty",
+      "view": "projects",
+      "open": "",
       "used": "Express is the HTTP layer on those Node apps. Routes, auth middleware, and the JSON the React screens call."
+    },
+    "fastapi": {
+      "name": "FastAPI",
+      "kind": "Project",
+      "place": "Adaptive-RAG",
+      "view": "projects",
+      "open": "",
+      "used": "The hackathon gateway is FastAPI: per-user rate limiting so one client cannot burn the shared model key, and the routing layer in front of LiteLLM and Portkey."
     },
     "mongo": {
       "name": "MongoDB",
       "kind": "Project",
       "place": "Musify",
-      "used": "Musify stores users, tracks, and roles in MongoDB. JWT is what decides whether a request is allowed to read them."
+      "view": "projects",
+      "open": "",
+      "used": "Musify stores users, tracks, and roles in MongoDB. JWT decides whether a request is allowed to read them."
     },
     "mysql": {
       "name": "MySQL",
       "kind": "Work",
       "place": "Razorpay production SQL",
-      "used": "The production database behind a stuck payment. I query it for transaction flow, delivery, and settlement delay, then write the root cause from the rows, not from a guess."
+      "view": "experience",
+      "open": "",
+      "used": "The production database behind a stuck payment. I query it for transaction flow, delivery, and settlement delay, and write the root cause from those rows."
     },
     "queryopt": {
       "name": "Query optimization",
       "kind": "Work",
       "place": "Razorpay production SQL",
-      "used": "The query is shaped around the incident: which payment, which state, which settlement window. A merchant is waiting, so the question has to return the failing rows, not the whole table."
+      "view": "experience",
+      "open": "",
+      "used": "I write the query for the incident: which payment, which state, and which settlement window, so it returns the failing rows."
+    },
+    "eventdriven": {
+      "name": "Event-driven architecture",
+      "kind": "Work",
+      "place": "Razorpay payment flows",
+      "view": "experience",
+      "open": "",
+      "used": "Payments are events moving between systems: a webhook fires, a retry lands, an idempotent key dedupes. I trace those chains across services and explain where the sequence broke."
     },
     "rest": {
       "name": "REST APIs",
       "kind": "Work",
       "place": "Razorpay · Curlec and Singapore",
+      "view": "experience",
+      "open": "",
       "used": "I take merchants from API design to production on the payment gateway, APIs, SDKs, and plugins. In Malaysia that product is Curlec. In Singapore, Razorpay supplies the checkout, APIs, and webhooks. Airwallex runs the licensed processing."
     },
     "websockets": {
       "name": "WebSockets",
       "kind": "Project",
       "place": "Chatty and Musify",
+      "view": "projects",
+      "open": "",
       "used": "Chatty is a real-time chat app. Musify uses the same pattern for live playback updates. Both are React and Node. WebSockets carry the event that HTTP would otherwise poll for."
     },
     "webhooks": {
       "name": "Webhooks",
       "kind": "Work",
       "place": "Razorpay Curlec",
-      "used": "A normal week is about 15–20 API and SDK issues across the gateway, webhooks, and auth. I stay with the payload, the signature, and the retry until the failure is explained, then leave a note the next merchant can use."
+      "view": "experience",
+      "open": "",
+      "used": "A normal week is 15 to 20 API and SDK issues across the gateway, webhooks, and auth. I stay with the payload, the signature, and the retry until the failure is explained, then leave a note the next merchant can use."
     },
     "oauth": {
       "name": "OAuth",
       "kind": "Work",
       "place": "Razorpay auth and API access",
+      "view": "experience",
+      "open": "",
       "used": "Auth sits in the same production queue as webhooks. I reproduce missing credentials, expired keys, and permission errors, fix the ones that are merchant-side, and hand engineering a clear repro when they are not."
     },
     "jwt": {
       "name": "JWT authentication",
       "kind": "Project",
       "place": "Musify",
-      "used": "Musify signs the session with JWT and checks the role before a track is served. The token is the gate. MongoDB is the record behind it."
+      "view": "projects",
+      "open": "",
+      "used": "Musify signs the session with JWT and checks the role before a track is served. MongoDB stores the records behind that check."
     },
     "ratelimit": {
       "name": "Rate limiting",
       "kind": "Project",
       "place": "Adaptive-RAG",
+      "view": "projects",
+      "open": "",
       "used": "The hackathon gateway is FastAPI, with a per-user limit so one client cannot burn the shared model key. Haiku and Sonnet are routed behind that limit through LiteLLM and Portkey."
     },
     "idempotency": {
       "name": "Idempotency",
       "kind": "Work",
       "place": "Razorpay Curlec",
-      "used": "A retry is not a new payment. I read production logs for timeouts, retries, and idempotency across the distributed flow, then separate a repeated attempt from a real failure."
+      "view": "experience",
+      "open": "",
+      "used": "I read production logs for timeouts, retries, and idempotency across the distributed flow, and separate a repeated attempt from a real failure."
+    },
+    "rag": {
+      "name": "RAG",
+      "kind": "Project",
+      "place": "Adaptive-RAG",
+      "view": "projects",
+      "open": "",
+      "used": "Built a retrieval-augmented generation pipeline for country-aware product discovery across Malaysia and India, with document retrieval, an admin knowledge-base upload, and sales or support redirection. Some hackathon pieces were stubbed."
+    },
+    "llmgateway": {
+      "name": "LLM gateways",
+      "kind": "Project",
+      "place": "Adaptive-RAG · LiteLLM and Portkey",
+      "view": "projects",
+      "open": "",
+      "used": "LiteLLM and Portkey sit between the app and the models. They hold one shared key, and they show the cost and usage of each request."
+    },
+    "modelrouting": {
+      "name": "Model routing",
+      "kind": "Project",
+      "place": "Adaptive-RAG · Haiku and Sonnet",
+      "view": "projects",
+      "open": "",
+      "used": "Simple questions go to Claude Haiku and harder ones go to Sonnet, through the gateway, so the cost follows the difficulty. That keeps a per-user rate limit and a shared key workable at the same time."
+    },
+    "mcp": {
+      "name": "MCP",
+      "kind": "Work",
+      "place": "Razorpay · AI-assisted troubleshooting",
+      "view": "experience",
+      "open": "",
+      "used": "I use Model Context Protocol workflows on the same production logs I read by hand, to pull the failing trace, compare attempts, and draft the root cause."
+    },
+    "prompts": {
+      "name": "Prompt engineering",
+      "kind": "Project",
+      "place": "Adaptive-RAG",
+      "view": "projects",
+      "open": "",
+      "used": "On Adaptive-RAG the prompt has to survive a changing knowledge base. I shape what the model sees: the country-specific docs, and the route between Haiku and Sonnet. Some hackathon pieces were stubbed."
     },
     "langchain": {
       "name": "LangChain",
       "kind": "Project",
       "place": "Text2SQL",
-      "used": "Text2SQL chains the question, the schema, and the model in LangChain. The person asking never has to write the SQL."
+      "view": "projects",
+      "open": "",
+      "used": "Text2SQL uses LangChain to connect the question, the schema, and the model, and returns the SQL for that question."
     },
     "llama": {
       "name": "Llama 3",
       "kind": "Project",
       "place": "Text2SQL",
+      "view": "projects",
+      "open": "",
       "used": "Llama 3 is the model that writes the query. It runs locally, so the demo does not depend on a hosted API key."
     },
     "ollama": {
       "name": "Ollama",
       "kind": "Project",
       "place": "Text2SQL",
+      "view": "projects",
+      "open": "",
       "used": "Ollama serves Llama 3 on the machine. Schema hints sit in a Google Sheets cache, so a repeat question does not fetch the same tables again."
-    },
-    "streamlit": {
-      "name": "Streamlit",
-      "kind": "Project",
-      "place": "Text2SQL",
-      "used": "The screen is Streamlit. One field for the question, one for the SQL. No separate front-end app in the way of the demo."
     },
     "adk": {
       "name": "Google ADK",
       "kind": "Project",
       "place": "Agentic traffic system",
+      "view": "projects",
+      "open": "",
       "used": "Best Breakthrough Concept at Google Cloud Agentic AI Day, from 9,100+ projects. A live traffic tracker on Google Maps, Firebase, and the Agent Development Kit, with more than one agent on the same stream."
     },
-    "prompts": {
-      "name": "Prompt optimization",
+    "streamlit": {
+      "name": "Streamlit",
       "kind": "Project",
-      "place": "Adaptive-RAG",
-      "used": "On Adaptive-RAG the prompt has to survive a changing knowledge base. I shape what the model sees: the country-specific docs, and the route between Haiku and Sonnet. Some hackathon pieces were stubbed."
+      "place": "Text2SQL",
+      "view": "projects",
+      "open": "",
+      "used": "The screen is Streamlit, deployed on Streamlit Cloud, with one field for the question and one for the SQL."
+    },
+    "react": {
+      "name": "React",
+      "kind": "Project",
+      "place": "Adaptive-RAG and Musify",
+      "view": "projects",
+      "open": "",
+      "used": "Adaptive-RAG's front end mirrors Razorpay's navigation. Musify is a streaming app in React. Playback state stays out of the component tree."
+    },
+    "tailwind": {
+      "name": "Tailwind CSS",
+      "kind": "Project",
+      "place": "React screens",
+      "view": "projects",
+      "open": "",
+      "used": "Tailwind is how those React screens are styled. Spacing, type, and state live next to the markup, which keeps a checkout-like layout or a player from growing a second stylesheet."
+    },
+    "zustand": {
+      "name": "Zustand",
+      "kind": "Project",
+      "place": "Musify",
+      "view": "projects",
+      "open": "",
+      "used": "Musify keeps playback in Zustand. The player can move, pause, and change track without asking the whole React tree to render again."
+    },
+    "html": {
+      "name": "HTML",
+      "kind": "Project",
+      "place": "Musify and Adaptive-RAG",
+      "view": "projects",
+      "open": "",
+      "used": "The document under the React apps. Headings, buttons, and forms stay semantic so the screen still makes sense before the script runs."
+    },
+    "css": {
+      "name": "CSS",
+      "kind": "Project",
+      "place": "Musify and Adaptive-RAG",
+      "view": "projects",
+      "open": "",
+      "used": "Layout and the small states a screen actually needs: focus, error, empty, and the player or checkout sitting still while data loads."
     },
     "postman": {
       "name": "Postman",
       "kind": "Work",
       "place": "Razorpay API debugging",
-      "used": "Before I call a failure a gateway bug, I replay the merchant’s request in Postman. Same payload, same key, same environment."
+      "view": "experience",
+      "open": "",
+      "used": "Before I call a failure a gateway bug, I replay the merchant's request in Postman. Same payload, same key, same environment."
     },
     "devtools": {
       "name": "Chrome DevTools",
       "kind": "Work",
       "place": "Razorpay checkout and plugin issues",
+      "view": "experience",
+      "open": "",
       "used": "When the API succeeds and the checkout still fails, DevTools shows the request the browser actually sent. Headers, status, and the script that dropped a field."
     },
     "coralogix": {
       "name": "Coralogix",
       "kind": "Work",
       "place": "Razorpay production logs",
+      "view": "experience",
+      "open": "",
       "used": "Production logs for these issues are in Coralogix. I filter to the payment, then to the timeout, retry, or webhook that explains it."
     },
     "apidebug": {
       "name": "API debugging",
       "kind": "Work",
-      "place": "Razorpay · 15–20 issues a week",
+      "place": "Razorpay · 15 to 20 issues a week",
+      "view": "experience",
+      "open": "",
       "used": "Most of the weekly queue is a status code, a payload, and a merchant who cannot tell sandbox from production. I separate those before the escalation reaches engineering."
     },
     "logs": {
       "name": "Log analysis",
       "kind": "Work",
       "place": "Razorpay production",
-      "used": "Timeouts, retries, idempotency, and the MCP workflows I use on the same logs. The log is the incident. A screenshot of it is not."
+      "view": "experience",
+      "open": "",
+      "used": "I use the logs for timeouts, retries, idempotency, and the MCP workflows on the same traces."
     },
     "rca": {
       "name": "Root cause analysis",
       "kind": "Work",
       "place": "Razorpay · settlements and escalations",
-      "used": "A day can start on a webhook, move to a merchant’s API design, and end as a written root cause for a settlement delay. The note is what the next integration reuses. That writing is also what shortened onboarding by about 40%."
+      "view": "experience",
+      "open": "",
+      "used": "A day can start on a webhook, move to a merchant's API design, and end as a written root cause for a settlement delay. The note is what the next integration reuses. That writing is also what shortened onboarding by about 40%."
     }
   }
 }
