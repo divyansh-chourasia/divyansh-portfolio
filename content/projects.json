@@ -12,7 +12,7 @@
       "icon": "ti-robot",
       "iconBg": "#EEEDFE",
       "iconColor": "#534AB7",
-      "desc": "Country-aware product discovery for Malaysia and India. Retrieval, an admin upload, and routing between Claude Haiku and Sonnet. Some hackathon pieces were stubbed.",
+      "desc": "Country-aware product discovery for Malaysia and India. FastAPI backend with per-user rate limiting, model routing between Claude Haiku and Sonnet, and an LLM gateway in front of a shared key. Some hackathon pieces were stubbed.",
       "tags": [
         "FastAPI",
         "RAG",
@@ -39,7 +39,7 @@
       "icon": "ti-map-pin",
       "iconBg": "#E1F5EE",
       "iconColor": "#0F6E56",
-      "desc": "Best Breakthrough Concept at Google Cloud Agentic AI Day. Real-time multi-agent tracking, chosen from 9,100+ projects.",
+      "desc": "Best Breakthrough Concept at Google Cloud Agentic AI Day. Real-time multi-agent tracking on Google Maps, chosen from 9,100+ projects.",
       "tags": [
         "ADK",
         "Firebase",
@@ -64,7 +64,7 @@
       "icon": "ti-database",
       "iconBg": "#E6F1FB",
       "iconColor": "#185FA5",
-      "desc": "Plain English into SQL. Streamlit, LangChain, and Llama 3 through Ollama, with a schema cache in Google Sheets.",
+      "desc": "Plain English into SQL. Streamlit on LangChain and Llama 3, running locally through Ollama, with schema caching in Google Sheets to cut repeat calls. Deployed on Streamlit Cloud.",
       "tags": [
         "Streamlit",
         "LangChain",
@@ -89,7 +89,7 @@
       "icon": "ti-music",
       "iconBg": "#EEEDFE",
       "iconColor": "#534AB7",
-      "desc": "A streaming application. React, Node.js, MongoDB, JWT, and Zustand for playback state.",
+      "desc": "A full-stack streaming application. Node.js and Express behind React, MongoDB storage, JWT auth with role-based access, and Zustand keeping playback state out of the component tree.",
       "tags": [
         "React",
         "Node.js",
@@ -165,7 +165,7 @@
         "href": "https://live-demo.example"
       }
     ],
-    "summary": "A retrieval pipeline for country-aware product discovery. Some hackathon pieces were stubbed, and the page says so.",
+    "summary": "A retrieval pipeline for country-aware product discovery, behind a gateway that controls cost. Per-user rate limits and Haiku/Sonnet routing keep a shared API key affordable. Some hackathon pieces were stubbed.",
     "tags": [
       "Retrieval",
       "FastAPI",
