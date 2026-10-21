@@ -25,14 +25,14 @@
       "bl": "Model routing",
       "symbols": [
         {
-          "icon": "live",
-          "href": "https://live-demo.example"
+          "icon": "",
+          "href": ""
         }
       ]
     },
     {
       "title": "Agentic traffic",
-      "from": "Razorpay Singapore",
+      "from": "Google Cloud Agentic AI Day",
       "show": true,
       "status": "Award",
       "statusStyle": "background:#E1F5EE;color:#085041;",
@@ -51,8 +51,8 @@
       "bl": "Tracking",
       "symbols": [
         {
-          "icon": "live",
-          "href": "https://live-demo.example"
+          "icon": "",
+          "href": ""
         }
       ]
     },
@@ -77,7 +77,7 @@
       "symbols": [
         {
           "icon": "live",
-          "href": "https://live-demo.example"
+          "href": "https://drive.google.com/file/d/1dW0_0nLluiwpNklbyf8nRNra97RTKTjl/view"
         }
       ]
     },
@@ -102,7 +102,7 @@
       "symbols": [
         {
           "icon": "live",
-          "href": "https://live-demo.example"
+          "href": "https://test-spotify-jm7u.onrender.com/"
         }
       ]
     },
@@ -124,8 +124,8 @@
       "bl": "Until shown",
       "symbols": [
         {
-          "icon": "live",
-          "href": "https://live-demo.example"
+          "icon": "",
+          "href": ""
         }
       ]
     },
@@ -147,8 +147,8 @@
       "bl": "Until shown",
       "symbols": [
         {
-          "icon": "live",
-          "href": "https://live-demo.example"
+          "icon": "",
+          "href": ""
         }
       ]
     }
@@ -161,8 +161,8 @@
     "from": "Technical Consultant · Razorpay",
     "symbols": [
       {
-        "icon": "live",
-        "href": "https://live-demo.example"
+        "icon": "",
+        "href": ""
       }
     ],
     "summary": "A retrieval pipeline for country-aware product discovery, behind a gateway that controls cost. Per-user rate limits and Haiku/Sonnet routing keep a shared API key affordable. Some hackathon pieces were stubbed.",
