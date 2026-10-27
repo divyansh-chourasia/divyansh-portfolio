@@ -7,7 +7,7 @@
       "sub": "Think like a developer. Debug like an engineer. Innovate with AI."
     },
     "paragraphs": [
-      "Backend and AI engineer at Razorpay. For 2+ years I have shipped payment integrations, including APIs, SDKs, and webhooks, for merchants across Malaysia and Singapore. I read production code in PHP, Go, and JavaScript, and I use the logs to find where a payment failed.",
+      "For 2+ years I have shipped payment integrations, including APIs, SDKs, and webhooks, for merchants across Malaysia and Singapore. I read production code in PHP, Go, and JavaScript, and I use the logs to find where a payment failed.",
       "On the AI side I have built a RAG pipeline with model routing between Claude Haiku and Sonnet behind LiteLLM and Portkey, a Text2SQL engine running Llama 3 locally, and a multi-agent traffic tracker that won Best Breakthrough Concept at Google Cloud's Agentic AI Day.",
       "I take a problem from the root cause through the fix or a clean handoff, then write notes the next person can use. Those integration notes shortened merchant onboarding by roughly 40%."
     ],
